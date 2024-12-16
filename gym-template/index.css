@@ -1,0 +1,1145 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+header {
+  /* position: relative; */
+  background-image: url('./img/carousel-2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  color: white;
+}
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+.head-content, .navbar{
+  position: relative;
+  z-index: 2; 
+}
+.logo{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.burger i{
+  font-size: 29px;
+  color: white;
+}
+.burger{
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  padding-right: 5%;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  background-color: black;
+  padding: 20px 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+.head-content{
+  justify-items: center;
+  margin-top: 8%;
+  font-family: "Oswald", sans-serif;
+}
+.head-content h4{
+  color: red;
+  font-size: 30px;
+  font-weight: 400;
+}
+.head-content h1{
+  font-size: 90px;
+}
+ .head-content button{
+  padding: 10px 20px;
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: 2px solid #fff;
+  font-family: "Raleway", serif;
+}
+
+.head-content button:hover{
+  color: red;
+  border-color: red;
+}
+
+.main1{
+  max-width: 1200px;
+  display: flex;
+  margin-left: 10%;
+  padding-bottom: 60px;
+  margin-top: -90px;
+  justify-items: right;
+}
+.main1 .red{
+  background-color: rgb(255, 57, 57);
+  justify-content: right;
+  padding:20px;
+  padding-top:70px;
+  padding-bottom: 70px;
+  color: white;
+ 
+}
+.main1 h1{
+  font-family: "Oswald", sans-serif;
+}
+.main1  p{
+  font-family: "Raleway", serif;
+}
+
+.main1 .blue{
+  background-color: black;
+  color: white;
+  padding:20px;
+  padding-top:70px;
+  padding-bottom: 80px;
+}
+
+/* ============================exp===================== */
+.exp{
+  max-width: 1200px;
+  display: flex;
+  margin-left: 10%;
+  padding-bottom: 30px;
+}
+.exp-content{
+  margin-left: 20px;
+}
+.exp-content h1{
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+}
+.exp-content p{
+  font-family: "Raleway", serif;
+  color: gray;
+}
+.exp-content button{
+  padding: 10px 20px;
+  font-size: 20px;
+  background: none;
+  color: red;
+  border: 2px solid red;
+  font-family: "Raleway", serif;
+}
+
+.exp-award{
+  display: flex;
+}
+.exp-award img{
+  height: 90px;
+  width: 90px;
+}
+.exp-award h4{
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+/* =====================================MOTIVATION========== */
+.motivation{
+  display: flex;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.card-moti1, .card-moti2{
+  display: flex;
+}
+.card-moti1 {
+  background-color: #111111;
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 40px;
+}
+.card-moti2{
+  background-color: #e31c25;
+  padding-left: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 40px;
+}
+.content-moti h3{
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.content-moti p{
+  font-family: "Raleway", serif;
+}
+.img-moti{
+  margin-top: 40px;
+}
+
+/* =====================benifit */
+.benefits {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h5 {
+  font-family: "Oswald", sans-serif;
+  color: red;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  color: #333;
+
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.benefit-img {
+  position: relative;
+  flex: 0 0 200px;
+}
+
+.benefit-img img {
+  height: 130px;
+  object-fit: cover;
+}
+
+.icon-box {
+  position: absolute;
+  top: -10px;
+  right:-10px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.benefit-item h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.benefit-item p {
+  font-family: "Raleway", serif;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+/* =========================newsletter */
+.newsletter {
+  position: relative;
+  background: url('img/bg.jpg') no-repeat center center/cover;
+  height: 300px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.newsletter::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.newsletter-content{
+  position: relative;
+  z-index: 2; 
+}
+.newsletter-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.newsletter-content p {
+  font-family: "Raleway", serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 3px 0 0 3px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #d00000;
+}
+
+/* ========================timetable====== */
+.timetable{
+  max-width: 1200px;
+  padding-top: 20px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.timetable-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.timetable-title h5 {
+  font-family: "Oswald", sans-serif;
+  color: red;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.timetable-title h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  color: #333;
+
+}
+.timetable-button{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.timetable-button button{
+  padding: 10px 20px;
+  font-size: 20px;
+  background: none;
+  color: red;
+  border: 2px solid #fff;
+  font-family: "Raleway", serif;
+}
+.timetable-button button:hover{
+  background-color: red;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  word-wrap: break-word;
+  font-family: "Oswald", sans-serif;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Raleway", serif;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f4f4f4;
+} */
+
+strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  /* margin-bottom: 5px; */
+  color: #000;
+}
+
+td {
+  color: #555;
+}
+
+/* ========================bmi====== */
+.bmi {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  min-height: 500px;
+  padding-bottom: 50px;
+  margin-right: 40px;
+}
+.bmi-left {
+  position: relative;
+  flex: 1;
+  background: url('img/carousel-1.jpg') no-repeat center center/cover;
+  min-height: 500px;
+}
+.bmi-left::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.bmi-left-content{
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 50px;
+  margin-top: 15%;
+}
+
+.bmi-left-content h4 {
+  font-family: "Oswald", sans-serif;
+  color: #ff4c4c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bmi-left-content h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.bmi-left-content p {
+  font-family: "Raleway", serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.bmi-right {
+  flex: 1;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.bmi-right h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bmi-input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.bmi-input-row input {
+  width: 50%;
+  padding: 10px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.bmi-input-row input::placeholder {
+  color: #999;
+}
+
+.bmi-btn {
+  /* width: 75%; */
+  background-color: #444;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.bmi-btn:hover {
+  background-color: #ff4c4c;
+}
+
+/* ==========================trainers===== */
+.trainers{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.trainers-title{
+  text-align: center;
+}
+.trainers-title h3 {
+  font-family: "Oswald", sans-serif;
+  color: #ff4c4c;
+  font-size: 30px;
+  /* margin-bottom: 10px; */
+  text-transform: uppercase;
+}
+
+.trainers-title h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Trainers Container */
+.trainers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trainer-card {
+  background-color: #111;
+  color: white;
+  width: 220px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-10px);
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.trainer-info {
+  padding: 15px 10px;
+}
+
+.trainer-info h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  color: #ff4c4c;
+  margin-bottom: 5px;
+}
+
+.trainer-info p {
+  font-family: "Raleway", serif;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ====================testimonal====== */
+.testimonal{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  min-height: 500px;
+  padding-bottom: 50px;
+  margin-left: 8%;
+
+}
+.testimonal-left{
+  flex: 1;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.testimonial-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.client-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.client-name {
+  color: #ff4c4c;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.client-profession {
+  color: #ccc;
+  font-size: 14px;
+}
+.client-feedback{
+  border: 1px solid #fff;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.client-feedback p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.dash {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dash span {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background-color: #444;
+}
+
+.dash span.active {
+  background-color: #fff;
+  width: 15px;
+}
+.testimonal-right {
+  position: relative;
+  flex: 1;
+  background: url('img/carousel-2.jpg') no-repeat center center/cover;
+  min-height: 500px;
+}
+.testimonal-right::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.testimonal-right-content{
+  padding: 50px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  /* text-align: center; */
+}
+.testimonal-right-content h4 {
+  font-family: "Oswald", sans-serif;
+  color: #ff4c4c;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.testimonal-right-content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.testimonal-right-content p {
+  
+  font-family: "Raleway", serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* ======================blog== */
+.blog{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+.blog-title{
+  text-align: center;
+}
+.blog-title h4 {
+  font-family: "Oswald", sans-serif;
+  color: #e74c3c;
+  font-size: 30px;
+  /* margin-bottom: 10px; */
+}
+
+.blog-title h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Blog Card */
+.blog-card {
+  position: relative;
+  background-color: #fff;
+  /* border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  max-width: 500px;
+  text-align: left;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-content{
+  display: flex;
+  padding: 10px;
+}
+
+
+.blog-date {
+  font-family: "Oswald", sans-serif;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-weight: bold;
+  width: 60px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.blog-date span {
+  font-size: 15px;
+  display: block;
+}
+
+.content-card h3{
+  font-family: "Oswald", sans-serif;
+}
+.blog-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  font-family: "Raleway", serif;
+}
+
+.blog-meta i {
+  margin-right: 5px;
+  color: #777;
+}
+
+.blog-card p{
+  font-family: "Raleway", serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+  padding: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-card a .read-more{
+  padding: 20px;
+}
+.blog-card .read-more{
+  padding: 10px 20px;
+  font-size: 15px;
+  background: none;
+  color: red;
+  border: 2px solid red;
+  font-family: "Raleway", serif;
+}
+.blog-card .read-more:hover{
+  background-color: red;
+  color: white;
+}
+/* =========================footer== */
+.footer {
+  position: relative;
+  background: url('img/bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 100%;
+  padding: 50px 20px 20px;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  z-index: 1;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-bottom, .scroll-up{
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+.footer {
+  background-color: #111;
+  padding: 50px 20px 20px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-family: "Oswald", sans-serif;
+  margin-left: 25px;
+  color: red;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  font-family: "Raleway", serif;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.footer-section ul li i {
+  color: #fff;
+  margin-right: 10px;
+}
+.footer-section p{
+  font-family: "Raleway", serif;
+}
+.footer-section p strong{
+  font-family: "Raleway", serif;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 5px;
+  color: red;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+
+.footer-bottom {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  border-top: 1px solid #333;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 18px;
+  color:white;
+}
+
+.footer-bottom a {
+  color: rgb(227, 20, 20);
+  font-weight: bold;
+}
+
+
+.scroll-up {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: none;
+  color: red;
+  padding: 10px;
+ 
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border: 1px solid red;
+}
+
+.scroll-up:hover {
+  background-color: #fff;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+  .nav{
+    display: none;
+  }
+  .logo{
+    margin-right: 34%;
+  }
+  .burger{
+    display: inline-block;
+  }
+  .main1{
+    max-width: 720px;
+    margin-left:22px ;
+    padding: 10px;
+  }
+  .head-content h1{
+    font-size: 70px;
+  }
+  .exp{
+    display: block;
+  }
+  .motivation{
+    display: block;
+  }
+  
+  .benefits-grid{
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .section-title h2{
+    font-size: 40px;
+  }
+  th, td {
+    padding: 8px;
+    font-size: 12px;
+}
+strong {
+    font-size: 14px;
+}
+  .trainers-container{
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 426px){
+  .logo{
+    margin-left: 20%;
+  }
+  .head-content h1{
+    font-size: 50px;
+  }
+  .head-content h4{
+    font-size: 25px;
+  }
+  .main1{
+    display: block;
+    margin-left: 10px;
+  }
+  .exp-img img{
+    height: 400px;
+    width: 380px;
+    padding-right: 20px;
+  }
+  .benefit-item{
+    display: block;
+  }
+  .benefits-grid{
+    display: block;
+  }
+  .benefits {
+    padding-left: 30px;
+  }
+  .newsletter-content h2{
+    font-size: 30px;
+  }
+  .newsletter-content h5{
+    font-size: 20px;
+  }
+  .newsletter-form input {
+    width: 50%;
+  }
+  .newsletter-content p{
+    font-size: 12px;
+  }
+  table{
+    display: none;
+  }
+  .timetable-button button{
+    font-size: 15px;
+  }
+  .timetable-title h2 {
+    font-size: 30px;
+  }
+  .timetable-title h5{
+    font-size: 20px;
+  }
+  .trainers-container{
+    margin-left: 10%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
