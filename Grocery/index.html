@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <title>Grocery</title>
+  
+</head>
+<body>
+  <div class="coupon">
+    <p>Super Value Deals - Save more with coupons</p>
+    <h4><img src="/imgs/usaflag.png">English <i class="fa-solid fa-angle-down"></i></h4>
+  </div><!--coupon ends here-->
+
+
+  <div class="container">
+    <header class="header1">
+      <div class="logo">
+          <img src="/imgs/logo.png" alt="Cart Icon" class="cart-icon">
+      </div>
+      <div class="search-bar">
+          <input type="text" placeholder="Search for products">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="location">
+          <button>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Location</span>
+          </button>
+      </div>
+      <div class="icons">
+          <div class="icon1">
+              <i class="fa-regular fa-heart"></i>
+              <span class="badge">4</span>
+          </div>
+          <div class="icon1">
+              <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="icon1">
+            <i class="fa-solid fa-bag-shopping"></i>
+              <span class="badge">5</span>
+          </div>
+      </div>
+      <div class="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32" fill="currentColor" class="bi bi-text-indent-left text-primary"><path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708M7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"></path></svg>
+      </div>
+  </header><!--header ends here-->
+
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="all-departments">
+        <i class="fa-solid fa-border-all"></i>
+        <span>All Departments</span>
+        <ul class="dropdown-menu">
+          <li><a href="#">Dairy, Bread & Eggs</a></li>
+          <li><a href="#">Snacks & Munchies</a></li>
+          <li><a href="#">Fruits & Vegetables</a></li>
+          <li><a href="#">Cold Drinks & Juices</a></li>
+          <li><a href="#">Breakfast & Instant Food</a></li>
+          <li><a href="#">Bakery & Biscuits</a></li>
+          <li><a href="#">Chicken, Meat & Fish</a></li>
+        </ul>
+      </button>
+    </div>
+    <ul class="nav-links">
+        <li class="dropdown"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Home Default</a></li>
+            <li><a href="#">Home Modern</a></li>
+            <li><a href="#">Home Creative</a></li>
+            <li><a href="#">Home Local Store</a></li>
+            <li><a href="#">Home Minimalist</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Shop Grid - Filter</a></li>
+            <li><a href="#">Shop Grid - 3 column</a></li>
+            <li><a href="#">Shop List - Filter</a></li>
+            <li><a href="#">Shop - Filter</a></li>
+            <li><a href="#">Shop Wide</a></li>
+            <li><a href="#">Shop Single</a></li>
+            <li><a href="#">Shop Single v2</a></li>
+            <li><a href="#">Shop Wishlist</a></li>
+            <li><a href="#">Shop Cart</a></li>
+            <li><a href="#">Shop Checkout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">Stores <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" >Store List</a></li>
+            <li><a href="#" >Store Grid</a></li>
+            <li><a href="#" >Store Single</a></li>
+          </ul>
+        </li>
+        <li ><a href="#">Mega Menu <i class="fa-solid fa-angle-down"></i></a></li>
+        <li class="dropdown"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" >Blog</a></li>
+            <li><a href="#" >Blog Single</a></li>
+            <li><a href="#" >Blog Category</a></li>
+            <li><a href="#" >About Us</a></li>
+            <li><a href="#" >404 Error</a></li>
+            <li><a href="#" >Contact</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">Account <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Forgot Password</a></li>
+            <li class="nested-dropdown"><a href="#">My Account  <i class="fa-solid fa-angle-right"></i></a>
+              <ul class="nested-menu">
+                <li><a href="#" >Orders</a></li>
+                <li><a href="#" >Setting</a></li>
+                <li><a href="#" >Address</a></li>
+                <li><a href="#" >Payment Method</a></li>
+                <li><a href="#" >Notification</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Docs</a></li>
+    </ul>
+</nav><!--nav ends here-->
+<hr>
+
+  <div class="ad-container">
+    <div class="ad-content">
+      <div class="discount-tag">Opening Sale Discount 50%</div>
+    <h1 class="ad-title">SuperMarket For<br> Fresh Grocery</h1>
+    <p class="ad-description">Introduced a new model for online grocery shopping<br> and convenient home delivery.</p>
+    <button class="cta-button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div><!--ad-container end here-->
+
+
+  <div class="card-container1">
+    <h2>Featured Categories</h2>
+    <div class="categories">
+      <div class="category-card">
+        <img src="/imgs/category-cleaning-essentials.jpg" alt="Cleaning Essentials">
+        <p>Cleaning Essentials</p>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/category-pet-care.jpg" alt="Pet Care">
+        <p>Pet Care</p>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/category-fruits-vegetables.jpg" alt="Fruits & Vegetables">
+        <p>Fruits & Vegetables</p>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/category-cold-drinks-juices.jpg" alt="Fruits & Vegetables">
+        <p>Fruits & Vegetables</p>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/category-baby-care.jpg" alt="Fruits & Vegetables">
+        <p>Baby Care</p>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/category-snack-munchies.jpg" alt="Fruits & Vegetables">
+        <p>Snacks & Munchies</p>
+      </div>
+    </div>
+  </div><!--card container1 ends here-->
+
+
+  <div class="cards-container2">
+    <!-- Fruits & Vegetables Card -->
+    <div class="card1">
+      <div class="card-content">
+        <h3>Fruits & Vegetables</h3>
+        <p>Get Upto <strong>30% Off</strong></p>
+        <button class="shop-button">Shop Now</button>
+      </div>
+      <div class="card-image fruits"></div>
+    </div>
+
+    <!-- Freshly Baked Buns Card -->
+    <div class="card2">
+      <div class="card-content">
+        <h3>Freshly Baked Buns</h3>
+        <p>Get Upto <strong>25% Off</strong></p>
+        <button class="shop-button">Shop Now</button>
+      </div>
+      <div class="card-image buns"></div>
+    </div>
+  </div><!--card container 2 ends here-->
+
+
+
+  <div class="card-container3">
+    <h1>Popular Products</h1>
+    <div class="product-grid">
+      <!-- Product Card -->
+        <div class="product-card">
+            <div class="tag">
+                <div class="red">Sale</div>
+                <div class="green">10%</div>
+            </div>
+            <img src="/imgs/product-img-1.jpg" alt="Haldiram's Sev Bhujia">
+            <div class="product-info">
+            <p class="category">Snack & Munchies</p>
+            <h3>Haldiram's Sev Bhujia</h3>
+            <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+            <div class="price">
+                <span class="current">$21.6</span>
+                <span class="original">$24</span>
+            </div>
+            <button class="add-to-cart">+ Add</button>
+            </div>
+        </div>
+
+      <div class="product-card">
+    <img src="/imgs/product-img-2.jpg" alt="Haldiram's Sev Bhujia">
+    <div class="product-info">
+      <p class="category">Bakery & Biscuits</p>
+      <h3>NutriChoice Digestive</h3>
+      <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+      <div class="price">
+        <span class="current">$24</span>
+        <span class="original">$24</span>
+      </div>
+      <button class="add-to-cart">+ Add</button>
+    </div>
+    </div>
+
+      <div class="product-card">
+        <div class="tag buy-1-get-1">Buy 1 Get $4.00 Off</div>
+        <img src="/imgs/product-img-3.jpg" alt="Cadbury 5 Star Chocolate">
+        <div class="product-info">
+          <p class="category">Bakery & Biscuits</p>
+          <h3>Cadbury 5 Star Chocolate</h3>
+          <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+          <div class="price">
+            <span class="current">$35</span>
+            <span class="original">$35</span>
+          </div>
+          <button class="add-to-cart">+ Add</button>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <div class="tag">
+            <div class="red">Hot</div>
+            <div class="green">10%</div>
+        </div>
+        <img src="/imgs/product-img-4.jpg" alt="Haldiram's Sev Bhujia">
+        <div class="product-info">
+        <p class="category">Snack & Munchies</p>
+        <h3>Onion Flavour Potato</h3>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <div class="price">
+            <span class="current">$3</span>
+            <span class="original">$5</span>
+        </div>
+        <button class="add-to-cart">+ Add</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="tag">
+            <!-- <div class="red">Hot</div> -->
+            <div class="green">10%</div>
+        </div>
+        <img src="/imgs/product-img-5.jpg" alt="Haldiram's Sev Bhujia">
+        <div class="product-info">
+        <p class="category">Instant Food</p>
+        <h3>Salted Instant Popcorn</h3>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <div class="price">
+            <span class="current">$11.7</span>
+            <span class="original">$18</span>
+        </div>
+        <button class="add-to-cart">+ Add</button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="tag buy-1-get-1">Buy 1 Get $4.00 Off</div>
+        <img src="/imgs/product-img-3.jpg" alt="Cadbury 5 Star Chocolate">
+        <div class="product-info">
+          <p class="category">Bakery & Biscuits</p>
+          <h3>Cadbury 5 Star Chocolate</h3>
+          <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+          <div class="price">
+            <span class="current">$35</span>
+            <span class="original">$35</span>
+          </div>
+          <button class="add-to-cart">+ Add</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="tag">
+            <div class="red">Sale</div>
+            <div class="green">10%</div>
+        </div>
+        <img src="/imgs/product-img-1.jpg" alt="Haldiram's Sev Bhujia">
+        <div class="product-info">
+        <p class="category">Snack & Munchies</p>
+        <h3>Haldiram's Sev Bhujia</h3>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <div class="price">
+            <span class="current">$21.6</span>
+            <span class="original">$24</span>
+        </div>
+        <button class="add-to-cart">+ Add</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="tag">
+            <!-- <div class="red">Hot</div> -->
+            <div class="green">40%</div>
+        </div>
+        <img src="/imgs/product-img-6.jpg" alt="Haldiram's Sev Bhujia">
+        <div class="product-info">
+        <p class="category">Dairy,Bread & Eggs</p>
+        <h3>Blueberry Greek Yogurt</h3>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <div class="price">
+            <span class="current">$14.4</span>
+            <span class="original">$24</span>
+        </div>
+        <button class="add-to-cart">+ Add</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="/imgs/product-img-7.jpg" alt="Haldiram's Sev Bhujia">
+        <div class="product-info">
+          <p class="category">Dairy,Bread & Eggs</p>
+          <h3>Britannia Cheese Slices</h3>
+          <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+          <div class="price">
+            <span class="current">$24</span>
+            <span class="original">$24</span>
+          </div>
+          <button class="add-to-cart">+ Add</button>
+        </div>
+        </div>
+
+        <div class="product-card">
+            <div class="tag">
+                <!-- <div class="red">Hot</div> -->
+                <div class="green">15%</div>
+            </div>
+            <img src="/imgs/product-img-8.jpg" alt="Haldiram's Sev Bhujia">
+            <div class="product-info">
+            <p class="category">Instant Food</p>
+            <h3>Kellogg's Original Cereals</h3>
+            <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+            <div class="price">
+                <span class="current">$29.7</span>
+                <span class="original">$35</span>
+            </div>
+            <button class="add-to-cart">+ Add</button>
+            </div>
+          </div>
+        
+        <div class="product-card">
+            <img src="/imgs/product-img-2.jpg" alt="Haldiram's Sev Bhujia">
+            <div class="product-info">
+              <p class="category">Bakery & Biscuits</p>
+              <h3>NutriChoice Digestive</h3>
+              <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+              <div class="price">
+                <span class="current">$24</span>
+                <span class="original">$24</span>
+              </div>
+              <button class="add-to-cart">+ Add</button>
+            </div>
+            </div>
+        
+        <div class="product-card">
+            <img src="/imgs/product-img-9.jpg" alt="Haldiram's Sev Bhujia">
+                <div class="product-info">
+                  <p class="category">Snacks & Munchies</p>
+                  <h3>Slurrp Millet Chocolate</h3>
+                  <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+                  <div class="price">
+                    <span class="current">$0</span>
+                    <span class="original">$0</span>
+                  </div>
+                  <button class="add-to-cart">+ Add</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="tag">
+                <!-- <div class="red">Hot</div> -->
+                <div class="green">25%</div>
+            </div>
+            <img src="/imgs/product-img-10.jpg" alt="Haldiram's Sev Bhujia">
+            <div class="product-info">
+            <p class="category">Dairy,Bread & Eggs</p>
+            <h3>Amul Butter - 500g</h3>
+            <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+            <div class="price">
+                <span class="current">$29.7</span>
+                <span class="original">$35</span>
+            </div>
+            <button class="add-to-cart">+ Add</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="/imgs/product-img-2.jpg" alt="Haldiram's Sev Bhujia">
+            <div class="product-info">
+              <p class="category">Bakery & Biscuits</p>
+              <h3>NutriChoice Digestive</h3>
+              <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+              <div class="price">
+                <span class="current">$24</span>
+                <span class="original">$24</span>
+              </div>
+              <button class="add-to-cart">+ Add</button>
+            </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/imgs/product-img-9.jpg" alt="Haldiram's Sev Bhujia">
+                    <div class="product-info">
+                      <p class="category">Snacks & Munchies</p>
+                      <h3>Slurrp Millet Chocolate</h3>
+                      <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+                      <div class="price">
+                        <span class="current">$0</span>
+                        <span class="original">$0</span>
+                      </div>
+                      <button class="add-to-cart">+ Add</button>
+                </div>
+            </div>
+    </div>
+  </div><!--card container 3 ends here-->
+
+
+  <div class="card-container4">
+    <h1>Daily Best Sells</h1>
+    <div class="grid">
+      <!-- Left Banner -->
+      <div class="banner">
+        <h2>100% Organic Coffee Beans.</h2>
+        <p>Get the best deal before close.</p>
+        <button>Shop Now →</button>
+      </div>
+      <!-- Product Cards -->
+      <div class="product-cards">
+        <img src="/imgs/product-img-11.jpg" alt="Roast Ground Coffee">
+        <h3>Tea, Coffee & Drinks</h3>
+        <p>Roast Ground Coffee</p>
+        <p class="price">$13.5 <span class="old-price">$18</span></p>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <button>Add to cart</button>
+        <div class="countdown">
+          <p><span>1411</span> Days</p>
+          <p><span>12</span> Hours</p>
+          <p><span>16</span> Mins</p>
+          <p><span>3</span> Sec</p>
+        </div>
+      </div>
+      <div class="product-cards">
+        <img src="/imgs/product-img-12.jpg" alt="Crushed Tomatoes">
+        <h3>Fruits & Vegetables</h3>
+        <p>Crushed Tomatoes</p>
+        <p class="price">$13.5 <span class="old-price">$18</span></p>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <button>Add to cart</button>
+        <div class="countdown">
+          <p><span>1411</span> Days</p>
+          <p><span>12</span> Hours</p>
+          <p><span>16</span> Mins</p>
+          <p><span>3</span> Sec</p>
+        </div>
+      </div>
+      <div class="product-cards">
+        <img src="/imgs/product-img-13.jpg" alt="Golden Pineapple">
+        <h3>Fruits & Vegetables</h3>
+        <p>Golden Pineapple</p>
+        <p class="price">$14.4 <span class="old-price">$18</span></p>
+        <p class="rating"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> 4.3 (4)</p>
+        <button>Add to cart</button>
+        <div class="countdown">
+          <p><span>1411</span> Days</p>
+          <p><span>12</span> Hours</p>
+          <p><span>16</span> Mins</p>
+          <p><span>3</span> Sec</p>
+        </div>
+      </div>
+    </div>
+  </div><!--card container 4 ends here-->
+
+
+  <div class="features-container">
+    <div class="feature">
+      <div class="icon">
+        
+        <i class="fas fa-clock"></i>
+      </div>
+      <h3>10 minute grocery now</h3>
+      <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">
+        
+        <i class="fas fa-gift"></i>
+      </div>
+      <h3>Best Prices & Offers</h3>
+      <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best prices & offers.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">
+        
+        <i class="fas fa-box"></i>
+      </div>
+      <h3>Wide Assortment</h3>
+      <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">
+
+        <i class="fas fa-sync-alt"></i>
+      </div>
+      <h3>Easy Returns</h3>
+      <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy.</p>
+    </div>
+  </div><!--feature container ends here-->
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2>Categories</h2>
+        <ul>
+          <li>Vegetables & Fruits</li>
+          <li>Breakfast & instant food</li>
+          <li>Bakery & Biscuits</li>
+          <li>Atta, rice & dal</li>
+          <li>Sauces & spreads</li>
+          <li>Organic & gourmet</li>
+          <li>Baby care</li>
+          <li>Cleaning essentials</li>
+          <li>Personal care</li>
+        </ul>
+      </div>
+
+
+      <div class="footer-column">
+        <ul>
+            <li>Dairy, Bread & Eggs</li>
+            <li>Cold Drinks & Juices</li>
+            <li>tea, coffe & drinks</li>
+            <li>Masala, oil & more</li>
+            <li>Chicken, meat & fish</li>
+            <li>Breakfast & Instant Food</li>
+            <li>Paan corner</li>
+            <li>Pharma & wellness</li>
+            <li>Home & office</li>
+            <li>Pet care</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Get to know us</h2>
+        <ul>
+          <li>Company</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Help Center</li>
+          <li>Our Value</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>For Consumers</h2>
+        <ul>
+          <li>Payments</li>
+          <li>Shipping</li>
+          <li>Product Returns</li>
+          <li>FAQ</li>
+          <li>Shop Checkout</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Become a Shopper</h2>
+        <ul>
+          <li>Shopper Opportunities</li>
+          <li>Become a Shopper</li>
+          <li>Earnings</li>
+          <li>Ideas & Guides</li>
+          <li>New Retailers</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Freshcart programs</h2>
+        <ul>
+          <li>Freshcart programs</li>
+          <li>Gift Cards</li>
+          <li>Promos & Coupons</li>
+          <li>Freshcart Ads</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </div><!--footer container ends here-->
+    <hr>
+    <div class="payment">
+      <div class="methods">
+        <h4>Payment Methods      </h4>
+        <div class="pay-image">
+          <img src="/imgs/amazonpay.svg"><img src="/imgs/american-express.svg"><img src="/imgs/mastercard (1).svg"><img src="/imgs/paypal.svg"><img src="/imgs/visa (1).svg">
+        </div>
+      </div>
+      <div class="app">
+        <h4>Get deliveries by fresh cart</h4>
+        <div class="app-image">
+          <img src="/imgs/appstore-btn.svg"><img src="/imgs/googleplay-btn.svg">
+        </div>
+      </div>
+    </div><!--payment ends here-->
+    <hr class="hr-pay">
+
+    <div class="copyright">
+      <div class="copyright-content">
+        <i class="fa-regular fa-copyright"> </i>
+        <p>  2022 - 2024 FreshCart eCommerce HTML Template. All rights reserved. Powered by<br> <span class="green">Riddhi Patil.</span></p>
+      </div>
+      <div class="copyright-app">
+        <h5>Follow us on </h5>
+        <div class="app-copy">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+    <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+
+  </footer>
+
+  </div><!--container ends here-->
+</body>
+</html>
